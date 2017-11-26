@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crystal Game</title>
+  <!--links html to bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!--links my css to html placed second so it will override bootstrap where needed-->
+  <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  
+  <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+<!--     <div class = "container"> -->
+    <!-- Puts a header on page -->
+    <div class="row">
+      <div class="col-lg-12 container-fluid text-center bg-success text-white">
+          <h1 class="">CRYSTALS COLLECTOR!</h1>
+      </div>
+    </div>
+
+    <!-- create div's for directions -->
+    <div class = "row">
+      <div class = "col-lg-6 bg-primary text-white ml-5">
+          <h4>You will be given a random number at the start of the game. <br><br>
+          There are four crystals below. By clicking on the crystal you will be given a specific amount.
+          of points to your total.<br><br>
+
+          You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number. <br><br>
+
+          The value of each crystal is hidden from you until you click on it. <br><br>
+
+          Each time when the game starts, the game will change the values of
+          each crsytal.<br><br>
+
+          </h4>
+      <div class = "col-lg-6"></div>
+      </div>
+    </div>
+
+    <!-- create div for challenge number -->
+    <div class = "row">
+      <div class = "col-lg-4 bg-warning text-white ml-5">
+
+        <h2> Goal Score: <div id = "goalScore"> 0 </div> </h2>
+
+      </div>
+      <div class = "col-lg-1 bg-info text-white ml-3">
+        <!-- create div for win's a losses counter -->
+        <div id = "result"> Good Luck </div>    
+        <h2> Wins: <div id = "wins" ></div> <br>
+        Losses: </h2> <div id = "losses" > </div> <br>
+      </div>
+      <div class = "col-lg-7"></div>
+    </div>
+
+
+    <!-- create's buttons using images of gems -->
+    <div class = "row">
+      <div class = "col-lg-7 ml-4 mt-5">
+            <img class = "pics border border-warning" id ="emerald" src="./assets/images/emerald.jpeg" alt="emerald">
+            <img class = "pics border border-warning" id = "opal" src="./assets/images/opal.png" alt="opal">
+            <img class = "pics border border-warning" id = "ruby" src="./assets/images/ruby.png" alt="ruby">
+            <img class = "pics border border-warning" id = "saphire" src="./assets/images/saphire.png" alt="saphire">
+        </div>
+      <div class = "col-lg-5"></div>
+    </div>
+
+      <!-- Create 2 Divs for counting score -->
+    <div class = "row">
+      <div class = "col-lg-7 bg-warning text-white ml-5">
+        <br> <h2> Your total score is <h2> <br>
+      </div>
+      <div class = "col-lg-5"></div>
+    </div>
+
+    <div class = "row">
+      <div class = "col-lg-7 bg-warning text-white ml-5 mt-2">
+       <h2> <div id = "totalScore" > 0 </div> </h2>
+      </div>
+      <div class = "col-lg-5"></div>
+    </div>
+
+
+      <script type="text/javascript" src = "./assets/javascript/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+/* sets size for crystal pics */
+.pics{
+	height: 55%;
+	width: 15%;
+	/* may not need this but helpful for the testing */
+	float: left;
+}
