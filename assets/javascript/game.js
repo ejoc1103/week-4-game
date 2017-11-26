@@ -23,29 +23,29 @@ var equal = true;
 
 // Create a function that gives the crystals a number value and sets the goal score
 function setValues(){
-		goal = Math.floor(Math.random()*80) + 21;
+		goal = Math.floor(Math.random()*101) + 19;
 		$("#goalScore").text(goal);
 
-		opal = Math.floor(Math.random() * 10) + 1;
+		opal = Math.floor(Math.random() * 12) + 1;
 
-		saphire = Math.floor(Math.random() * 10) + 1;
+		saphire = Math.floor(Math.random() * 12) + 1;
 		if(saphire === opal){
 			while(saphire === opal){
-				saphire = Math.floor(Math.random() * 10) + 1;
+				saphire = Math.floor(Math.random() * 12) + 1;
 			}
 
 		}
-		emerald = Math.floor(Math.random() * 10) + 1;
+		emerald = Math.floor(Math.random() * 12) + 1;
 		if(emerald === opal || emerald === saphire){
 			while(emerald === opal || emerald === saphire){
-				emerald = Math.floor(Math.random() * 10) + 1;
+				emerald = Math.floor(Math.random() * 12) + 1;
 			}
 		}
 
-		ruby = Math.floor(Math.random() * 10) + 1;
+		ruby = Math.floor(Math.random() * 12) + 1;
 		if(ruby === saphire || ruby === opal || ruby === emerald){
 			while(ruby === saphire || ruby === opal || ruby === emerald){
-				ruby = Math.floor(Math.random() * 10) + 1;
+				ruby = Math.floor(Math.random() * 12) + 1;
 			}
 		}
 		score = 0;
