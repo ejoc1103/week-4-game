@@ -26,6 +26,9 @@ function setValues(){
 		goal = Math.floor(Math.random()*101) + 19;
 		$("#goalScore").text(goal);
 
+        $("#wins").text("Wins: " + wins);
+        $("#losses").text("Losses: " + losses);
+
 		opal = Math.floor(Math.random() * 12) + 1;
 
 		saphire = Math.floor(Math.random() * 12) + 1;
@@ -59,13 +62,13 @@ function setValues(){
         $("#totalScore").text(score);
         if(score === goal){
         	wins++;
-        	$("#wins").text(wins);
+        	$("#wins").text("Wins: " + wins);
         	$("#result").text("YOU WIN!");
         	setValues();
         }
         else if(score > goal){
         	losses++;
-        	$("#losses").text(losses);
+        	$("#losses").text("Losses: " + losses);
         	$("#result").text("YOU LOSE!");
         	setValues();
         }
@@ -75,13 +78,13 @@ function setValues(){
         $("#totalScore").text(score);
         if(score === goal){
         	wins++;
-        	$("#wins").text(wins);
+        	$("#wins").text("Wins: " + wins);
         	$("#result").text("YOU WIN!");
         	setValues();
         }
         else if(score > goal){
         	losses++;
-        	$("#losses").text(losses);
+        	$("#losses").text("Losses: " + losses);
         	$("#result").text("YOU LOSE!");
         	setValues();
         }
@@ -91,13 +94,13 @@ function setValues(){
         $("#totalScore").text(score);
         if(score === goal){
         	wins++;
-        	$("#wins").text(wins);
+        	$("#wins").text("Wins: " + wins);
         	$("#result").text("YOU WIN!");
         	setValues();
         }
         else if(score > goal){
         	losses++;
-        	$("#losses").text(losses);
+        	$("#losses").text("Losses: " + losses);
         	$("#result").text("YOU LOSE!");
         	setValues();
         }
@@ -107,13 +110,13 @@ function setValues(){
         $("#totalScore").text(score);
         if(score === goal){
         	wins++;
-        	$("#wins").text(wins);
+        	$("#wins").text("Wins: " + wins);
         	$("#result").text("YOU WIN!");
         	setValues();
         }
         else if(score > goal){
         	losses++;
-        	$("#losses").text(losses);
+        	$("#losses").text("Losses: " + losses);
         	$("#result").text("YOU LOSE!");
         	setValues();
         }
